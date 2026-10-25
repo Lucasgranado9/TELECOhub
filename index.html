@@ -1,0 +1,733 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>TELECOHUB UAB</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Campus de estudio del grado de Ingeniería de Telecomunicación de la UAB: cursos, cuatrimestres y asignaturas con sus apuntes, laboratorios y exámenes.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: cabecera con el logo y los cursos; portada centrada en el logo; listas limpias de cursos y asignaturas; todo en una sola pestaña */
+:root{
+  --bg:#ffffff; --fg:#111111; --muted:#6e6e6e; --line:#e6e6e6; --soft:#f6f6f6; --strong:#111111; --on:#ffffff;
+  --cice:#0e8a50; --riog:#c8102e; --sisd:#0b6bc4; --sdh:#6d28d9;
+  --disp:"Inter Tight","Helvetica Neue",Arial,sans-serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --logo:url(data:image/png;base64,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);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0c0c;--fg:#f0f0f0;--muted:#9a9a9a;--line:#262626;--soft:#161616;--strong:#f0f0f0;--on:#0c0c0c;--cice:#3ddc8f;--riog:#ff5d73;--sisd:#4aa8f5;--sdh:#a78bfa;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c0c0c;--fg:#f0f0f0;--muted:#9a9a9a;--line:#262626;--soft:#161616;--strong:#f0f0f0;--on:#0c0c0c;--cice:#3ddc8f;--riog:#ff5d73;--sisd:#4aa8f5;--sdh:#a78bfa;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans);margin:0;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+.gut{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto}
+:focus-visible{outline:2px solid var(--fg);outline-offset:3px;border-radius:6px}
+.logo{display:block;background:var(--fg);-webkit-mask:var(--logo) center/contain no-repeat;mask:var(--logo) center/contain no-repeat;aspect-ratio:900/183}
+
+/* cabecera */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:16px;height:64px}
+.hdr .logo{width:132px;flex:none}
+nav.main{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:14px;padding:7px 12px;border-radius:999px;white-space:nowrap;color:var(--muted)}
+nav.main a:hover{color:var(--fg);background:var(--soft)}
+nav.main a[aria-current="page"]{color:var(--fg);background:var(--soft);font-weight:600}
+.ico{flex:none;width:36px;height:36px;border-radius:999px;border:1px solid var(--line);background:none;color:var(--fg);display:grid;place-items:center;cursor:pointer}
+.ico svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6}
+.ico:hover{border-color:var(--fg)}
+.sht{display:none}
+@media (max-width:640px){.hdr .logo{width:104px}.lng{display:none}.sht{display:inline}nav.main a{padding:7px 9px}.hdr .wrap{gap:8px}nav.main a[data-r="inicio"]{display:none}}
+
+/* textos */
+h1,h2,h3{font-family:var(--disp);letter-spacing:-.03em;text-wrap:balance;margin:0}
+.lbl{font:500 11.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lead{font-size:16.5px;color:var(--muted);max-width:56ch;margin:0}
+section{padding-block:40px 8px}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:16px}
+.sh h2{font-size:22px;font-weight:700}
+
+/* portada */
+.hero{padding-block:clamp(56px,10vw,110px) clamp(36px,6vw,64px);text-align:center;border-bottom:1px solid var(--line)}
+.hero .logo{width:min(560px,86%);margin:0 auto 28px}
+.hero .lead{margin:0 auto}
+.hero .cta{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;border:1.5px solid var(--fg);font-weight:600;font-size:14.5px;cursor:pointer;background:none;color:var(--fg)}
+.btn.fill{background:var(--strong);color:var(--on)}
+.btn.fill:hover{opacity:.85}
+.btn:not(.fill):hover{background:var(--soft)}
+
+/* cursos */
+.courses{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:820px){.courses{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.course{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--line);border-radius:14px;transition:border-color .15s}
+.course:hover{border-color:var(--fg)}
+.course b{font:800 44px/1 var(--disp);letter-spacing:-.05em}
+.course span{font-weight:600}
+.course small{color:var(--muted);font-size:13px}
+.course.on small{color:var(--fg)}
+
+/* filas de asignatura */
+.list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:88px minmax(0,1fr) auto;align-items:center;gap:16px;padding:16px 4px;border-bottom:1px solid var(--line);transition:background .15s}
+a.row:hover{background:var(--soft)}
+.row .ab{font:800 22px var(--disp);letter-spacing:-.04em;display:flex;align-items:center;gap:8px}
+.row .ab::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c,var(--line));flex:none}
+.row b{display:block;font-weight:600}
+.row small{color:var(--muted);font-size:13px}
+.row .go{font-size:18px;color:var(--muted)}
+a.row:hover .go{color:var(--fg)}
+.row.empty{grid-template-columns:1fr;color:var(--muted);font-size:14px;padding:18px 4px}
+@media (max-width:520px){.row{grid-template-columns:70px minmax(0,1fr) auto;gap:10px}.row .ab{font-size:19px}}
+
+/* vista de curso */
+.ph{padding-block:clamp(36px,6vw,56px) 24px;border-bottom:1px solid var(--line)}
+.crumbs{display:flex;gap:6px;flex-wrap:wrap;font:500 12.5px var(--mono);color:var(--muted);margin-bottom:14px}
+.crumbs a:hover{color:var(--fg);text-decoration:underline}
+.ph h1{font-size:clamp(34px,6vw,56px);font-weight:800;margin-bottom:10px}
+.cuats{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:820px){.cuats{grid-template-columns:1fr;gap:8px}}
+
+/* vista de asignatura */
+.sh1{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.sh1 .ab{font:800 clamp(40px,7vw,64px)/1 var(--disp);letter-spacing:-.05em}
+.sh1 .dot{width:12px;height:12px;border-radius:50%;background:var(--c)}
+.ph h2{font-size:clamp(20px,3vw,26px);font-weight:600;margin:6px 0 10px;letter-spacing:-.02em}
+.ph .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cols{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:40px}
+@media (max-width:820px){.cols{grid-template-columns:1fr;gap:8px}}
+.temas{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.temas li{display:grid;grid-template-columns:36px minmax(0,1fr);gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+.temas li>span{font:700 15px var(--mono);color:var(--muted)}
+.temas b{display:block;font-weight:600}
+.temas small{color:var(--muted);font-size:13.5px}
+.facts{margin:0;border-top:1px solid var(--line)}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.slot{margin-top:16px;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;font-size:13.5px;color:var(--muted)}
+.slot b{display:block;color:var(--fg);font-size:14px;margin-bottom:2px}
+
+
+/* menú desplegable */
+.dd{position:relative}
+.ddb{display:inline-flex;align-items:center;gap:6px;font:500 14px var(--sans);padding:7px 12px;border-radius:999px;border:0;background:none;color:var(--muted);cursor:pointer}
+.ddb:hover,.ddb[aria-expanded="true"]{color:var(--fg);background:var(--soft)}
+.ddb[aria-current="page"]{color:var(--fg);font-weight:600}
+.chev{width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .15s}
+.ddb[aria-expanded="true"] .chev{transform:rotate(225deg) translateY(-1px)}
+.ddp{position:absolute;right:0;top:calc(100% + 10px);width:300px;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:6px;box-shadow:0 18px 40px -18px rgba(0,0,0,.35);display:flex;flex-direction:column}
+.ddp a{display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:10px}
+.ddp a:hover{background:var(--soft)}
+.ddp b{font:800 22px/1 var(--disp);width:24px;text-align:center}
+.ddp span{display:flex;flex-direction:column}
+.ddp strong{font-weight:600;font-size:14px}
+.ddp small{color:var(--muted);font-size:12.5px}
+nav.main{overflow:visible}
+/* pestañas y guía */
+.tabs{display:flex;gap:4px;margin-top:28px;border-bottom:1px solid var(--line);margin-bottom:-25px}
+.tabs a{padding:10px 14px;font-weight:500;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs a:hover{color:var(--fg)}
+.tabs a[aria-current="page"]{color:var(--fg);border-color:var(--fg);font-weight:600}
+.slot.link{display:block}
+.slot.link:hover{border-color:var(--fg);border-style:solid}
+.gblk{margin-bottom:30px}
+.gblk h3{font:500 11.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.ev{width:100%;border-collapse:collapse;border-top:1px solid var(--line);font-size:14px}
+.ev td{padding:11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.ev td:last-child{text-align:right;font-weight:600;padding-left:16px;font-variant-numeric:tabular-nums}
+.formula{margin-top:14px;padding:14px 16px;background:var(--soft);border-radius:12px;font:13px/1.6 var(--mono);overflow-x:auto}
+.formula p{margin:0}
+.ul{margin:12px 0 0;padding-left:18px;font-size:14px;color:var(--fg)}
+.ul li{margin-bottom:6px}
+.ul li::marker{color:var(--muted)}
+.pp{margin:0;font-size:14px}
+.facts dd{overflow-wrap:anywhere}
+.src{font-size:12.5px;color:var(--muted);margin:0}
+a.row.off .ab{color:var(--muted)}
+a.row.off b{font-weight:500}
+
+.optb{display:flex;align-items:center;gap:14px;width:100%;padding:18px 4px;border:0;border-top:1px solid var(--fg);border-bottom:1px solid var(--line);background:none;color:var(--fg);cursor:pointer;font:700 22px var(--disp);letter-spacing:-.03em;text-align:left}
+.optb .lbl{margin-left:auto}
+.optb:hover{background:var(--soft)}
+.optb[aria-expanded="true"] .chev{transform:rotate(225deg) translateY(-1px)}
+.optn{color:var(--muted);font-size:13.5px;margin:10px 4px}
+
+.ddp{width:320px}
+.ddg{padding:6px 4px 10px}
+.ddg+.ddg{border-top:1px solid var(--line);padding-top:10px}
+.ddp a.ddpl{display:flex;flex-direction:column;align-items:flex-start;gap:0;padding:6px 8px}
+.ddc{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:2px 6px 0}
+.ddp .ddc a{justify-content:center;padding:6px 4px;border:1px solid var(--line);border-radius:8px;font-size:12.5px;gap:0}
+.ddp .ddc a:hover{border-color:var(--fg)}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:820px){.plans{grid-template-columns:1fr}}
+.plan{border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:16px}
+.planh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.planh b{font:800 26px var(--disp);letter-spacing:-.03em}
+.planh small{color:var(--muted);font-size:13px;width:100%}
+.planh:hover b{text-decoration:underline;text-underline-offset:4px}
+.yr{font:500 12px var(--mono);border:1px solid var(--fg);border-radius:999px;padding:2px 9px;letter-spacing:.02em}
+.yr.big{font-size:14px;vertical-align:middle;margin-left:14px;position:relative;top:-8px}
+.pcs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:520px){.pcs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pcs a{display:flex;flex-direction:column;gap:4px;padding:12px;border:1px solid var(--line);border-radius:10px;min-width:0}
+.pcs a:hover{border-color:var(--fg)}
+.pcs b{font:800 26px/1 var(--disp)}
+.pcs small{color:var(--muted);font-size:11.5px;line-height:1.35}
+
+/* selector de plan / curso / especialidad */
+.ddp{width:300px}
+.ddp a.ddpl{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:12px}
+.ddpt{display:flex!important;flex-direction:row!important;align-items:center;gap:8px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:820px){.plans{grid-template-columns:1fr}}
+a.plan{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .15s}
+a.plan:hover{border-color:var(--fg)}
+.planh{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.planh b{font:800 28px var(--disp);letter-spacing:-.03em}
+a.plan small{color:var(--muted);font-size:14px;line-height:1.5}
+.pmeta{font:500 12px var(--mono);color:var(--muted)}
+a.plan .go{margin-top:6px;font-weight:600;font-size:14px}
+.yr{font:500 11.5px var(--mono);border:1px solid currentColor;border-radius:999px;padding:1px 8px;letter-spacing:.02em}
+.phrow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.phrow h1{margin:0}
+.seg{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--soft)}
+.seg a{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;font-size:13.5px;font-weight:500;color:var(--muted);white-space:nowrap}
+.seg a:hover{color:var(--fg)}
+.seg a[aria-current="page"]{background:var(--bg);color:var(--fg);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.seg.sm a{padding:6px 14px}
+.gsel{margin-bottom:22px;flex-wrap:wrap}
+.ctabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:26px}
+.ctabs a{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:8px;align-items:baseline;padding:14px 16px;border:1px solid var(--line);border-radius:12px;transition:border-color .15s,background .15s;min-width:0}
+.ctabs a:hover{border-color:var(--fg)}
+.ctabs b{font:800 26px/1 var(--disp);letter-spacing:-.04em;grid-row:1/3}
+.ctabs span{font-weight:600;font-size:14px}
+.ctabs small{color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctabs a[aria-current="page"]{background:var(--strong);border-color:var(--strong);color:var(--on)}
+.ctabs a[aria-current="page"] small{color:inherit;opacity:.7}
+@media (max-width:640px){.ctabs{grid-template-columns:repeat(2,minmax(0,1fr))}.seg a{padding:7px 11px;font-size:13px}}
+.csec{padding-block:30px 0}
+.chead{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}
+.chead h2{font-size:clamp(24px,3.4vw,32px);font-weight:800}
+.vsel{display:flex;align-items:center;gap:10px}
+.vnote{margin:0;color:var(--muted);font-size:13.5px}
+.vfull{margin:6px 0 0;color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);margin-top:56px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 32px;padding-block:24px 32px;font-size:12.5px;color:var(--muted)}
+footer .logo{width:96px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="hdr gut">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="TELECOHUB UAB, inicio"></a>
+    <nav class="main" id="nav" aria-label="Cursos"></nav>
+    <button class="ico" id="th" type="button" aria-label="Cambiar tema de color"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+  </div>
+</header>
+<main id="view"></main>
+<footer class="gut"><div class="wrap">
+  <span class="logo" role="img" aria-label="TELECOHUB UAB"></span>
+  <span>Proyecto de estudio personal, no oficial y sin relación con la UAB · prototipo · octubre de 2026</span>
+</div></footer>
+
+<script>
+// ============ DATOS DEL GRADO ============
+// Para añadir una asignatura: un objeto en SUBJ (page = su portal publicado junto a esta página) y su id en el curso que toque de PLANES.
+const SUBJ={
+  sisd:{ab:'SiSD',name:'Señales y Sistemas Discretos',c:'--sisd',page:'sisd.html',
+    desc:'Señales y sistemas en tiempo discreto: convolución, DTFT y DFT, muestreo, transformada Z y diseño de filtros.',
+    nums:{apartados:41,laboratorios:36,'en 3D':14,'exámenes':7},unidad:'Temas',
+    temas:[['Señales y sistemas discretos','Transformaciones, señales básicas, energía y potencia, propiedades, convolución y ecuaciones en diferencias.'],
+      ['Respuesta frecuencial','DTFT y DFT, convolución circular, diezmado e interpolación, correlación y espectro.'],
+      ['Muestreo y reconstrucción','Conversión A/D, aliasing, cambio de frecuencia de muestreo, interpolación sinc y retenedor.'],
+      ['La transformada Z','ROC, inversa por fracciones simples, EDF, estabilidad y respuesta frecuencial desde polos y ceros.'],
+      ['Análisis de sistemas','Fase mínima y pasa-todo, FIR de fase lineal, plantillas, FIR frente a IIR y enventanado.']]},
+  riog:{ab:'RiOG',name:'Radiación y Ondas Guiadas',c:'--riog',page:'riog.html',
+    desc:'Ecuaciones de Maxwell y onda plana, líneas de transmisión, guías de onda y carta de Smith.',
+    nums:{apartados:17,laboratorios:39,'en 3D':19,'exámenes':27},unidad:'Bloques',
+    temas:[['Radiación','Maxwell y fasores, medios materiales, onda plana y pérdidas, Poynting, polarización, reflexión y fibra óptica.'],
+      ['Líneas de transmisión','Telegrafista, coeficiente de reflexión, ROE, impedancia de entrada, stubs, λ/4 y geometrías.'],
+      ['Guías de onda y carta de Smith','Modos TE y TM en guías rectangulares y circulares, corte, dispersión y la carta de Smith.']]},
+  sdh:{ab:'SDiHDL',name:'Sistemas Digitales y HDL (Lenguajes de Descripción del Hardware)',c:'--sdh',page:'sdh.html',
+    desc:'Circuitos combinacionales, circuitos secuenciales y máquinas de estados, y la arquitectura UP-UC hasta el diseño de un procesador.',
+    nums:{'bloque 1':'completo (temas 1-4)',apartados:16,laboratorios:27,problemas:19},unidad:'Bloques',
+    temas:[['Circuitos combinacionales','Tema 1: sistemas digitales, descripción de sistemas, transistores MOS, puertas CMOS y ROM. Tema 2: álgebra de Boole, NAND, NOR, XOR y tri-state. Tema 3: síntesis, tiempos de respuesta, multiplexores, LUTs y decodificadores. Tema 4: introducción a SystemVerilog.'],
+      ['Circuitos secuenciales','Latches y flip-flops, registros y contadores, máquinas de Moore y Mealy, temporización y HDL.'],
+      ['Arquitectura UP-UC y diseño de un procesador','Unidad de proceso y de control, juego de instrucciones y diseño de un procesador sencillo.']]},
+  cice:{ab:'CiCE',name:'Componentes y Circuitos Electrónicos',c:'--cice',page:'cice.html',
+    desc:'Física de semiconductores, unión PN y diodos, transistores bipolar y MOS y dispositivos fotónicos.',
+    nums:{apartados:30,laboratorios:58,'en 3D':15,'exámenes':10},unidad:'Temas',
+    temas:[['Física de semiconductores','Bandas, electrones y huecos, dopado, Fermi-Dirac, deriva y difusión.'],
+      ['Unión PN y diodos','Potencial de contacto, ecuación del diodo, capacidades y circuitos con diodos.'],
+      ['Transistor bipolar','Efecto transistor, curvas, regiones, polarización, amplificador e inversor.'],
+      ['Transistor MOS','Estructura MOS, tensión umbral, inversores y puertas CMOS, conmutación y memorias.'],
+      ['Dispositivos fotónicos','LED, fotodiodos, células solares, optoacopladores, láser y fibra óptica.']]}
+};
+
+// asignaturas sin portal todavía (solo nombre): [id, sigla, nombre]
+for(const [id,ab,name] of [
+  ['calc','CAL','Cálculo'],['alg','ALG','Álgebra'],['finf','FInf','Fundamentos de Informática'],['tce','TCiE','Teoría de Circuitos y Electrónica'],
+  ['fss','FSiS','Fundamentos de Señales y Sistemas'],['lp','LP','Lenguajes de Programación'],['oge','OiGE','Organización y Gestión de Empresas'],['ppe','PiPE','Probabilidad y Procesos Estocásticos'],
+  ['coe','CiOE','Campos y Ondas Electromagnéticas'],
+  ['fes','FES','Fundamentos de Ingeniería del Software'],['xi','XI','Redes I'],
+  ['acp','ACiP','Arquitectura de Computadores y Periféricos'],['gpl','GPiL','Gestión de Proyectos y Legislación'],['ssc','SiSC','Señales y Sistemas de Comunicación'],['xii','XII','Redes II'],
+  
+  ['fing','FIng','Fundamentos de Ingeniería'],['est','EST','Estadística'],['fb','FB','Física Básica'],['fcom','FC','Fundamentos de la Comunicación'],['ac','AC','Arquitectura de Computadores'],['ea','EA','Electrónica Analógica'],['tcir','TCir','Teoría de Circuitos'],
+  ['fx','FX','Fundamentos de Redes'],['xt','XT','Redes de Telecomunicación'],
+  ['etr','ETiR','Electrónica de Transmisores y Receptores'],['ins1','INS I','Instrumentación I'],['dse','DSE','Diseño de Sistemas Electrónicos'],
+  ['cte','CiTE','Circuitos y Tecnologías Electrónicas'],['cep','CEP','Circuitos de Electrónica de Potencia'],['irm','IRiM','Ingeniería de Radiofrecuencia y Microondas'],['sea','SEiA','Sistemas Electrónicos y Aplicaciones'],['ins2','INS II','Instrumentación II']])SUBJ[id]={ab,name};
+
+for(const [id,ab,name,cr] of [
+
+  ['tirt','TiRT','Transmisores y Receptores de Telecomunicaciones'],['tds','TDS','Tratamiento Digital de la Señal'],['co','CO','Comunicaciones Ópticas'],['com','COM','Comunicaciones'],['ticis','TICiS','Teoría de la Información para Comunicaciones y Seguridad'],
+  ['em','EM','Ingeniería de Microondas'],['sr','SR','Sistemas de Radiocomunicación'],['rd','RD','Receptores Digitales'],['tc','TC','Teoría de la Comunicación'],['xist','XiST','Redes y Servicios de Telecomunicación'],
+  ['tfg','TFG','Trabajo de Fin de Grado'],['ant','ANT','Antenas'],['cm','CM','Comunicaciones Móviles'],
+  ['pp','PP','Prácticas Profesionales',12],['aacf','AACF','Aprendizaje Aplicado a las Comunicaciones Inalámbricas',6],['apie','APiE','Aprendizaje Profundo y Estadístico',6],['cq','CQ','Comunicaciones Cuánticas',6],['es','ES','Herramientas de Simulación',6],
+  ['isdp','ISDP','Implementación de Sistemas Definidos por Software',6],['stird','STiRD','Simulación de Transmisores y Receptores Digitales',6],['sgns','SGNS','Sistemas Globales de Navegación por Satélite',6],['radar','RADAR','Sistemas RADAR',6],['tsce','TSCE','Tecnologías para Sistemas de Comunicaciones Espaciales',6]])SUBJ[id]={ab,name,cr};
+
+// Planes de estudio: cada curso tiene q = [1.er cuatrimestre, 2.º cuatrimestre, anuales, semestre por determinar] y, si las hay, opt = optativas.
+// Una misma asignatura (mismo id) puede estar en los dos planes: comparte página, portal y material.
+const VARS={elec:{t:'Electrónica',n:'Ingeniería Electrónica de Telecomunicación'},sist:{t:'Sistemas',n:'Ingeniería de Sistemas de Telecomunicación'}};
+const E=()=>({q:[[],[],[]]});
+const PLANES={
+  antiguo:{t:'Plan antiguo',s:'El plan de estudios anterior. Primero y segundo son comunes; en tercero se elige Electrónica o Sistemas.',cursos:{
+    1:{t:'Primer curso',q:[['finf','calc','tce','fing'],['fss','alg','fes','est','fb'],[]]},
+    2:{t:'Segundo curso',q:[['riog','cice','sisd','sdh'],['fcom','ac','ea','oge'],[]]},
+    3:{t:'Tercer curso',var:{elec:{q:[['etr','ins1','gpl','dse','fx'],['cte','cep','irm','sea','ins2'],[]]},sist:{q:[['tds','tirt','fx','gpl'],['xt','tc','co','sr'],[]]}}},
+    4:{t:'Cuarto curso',var:{elec:E(),sist:E()}}}},
+  nuevo:{t:'Plan nuevo',y:'2026-2027',ects:{calc:6,alg:6,coe:9,finf:6,tcir:9,ppe:6,lp:6,fss:6,oge:6,riog:9,sisd:6,cice:6,sdh:9,fes:3,xi:6,ssc:6,gpl:6,acp:6,xii:3},s:'El plan que empieza en el curso 2026-2027. Primero y segundo son comunes; en tercero se elige Electrónica o Sistemas.',cursos:{
+    1:{t:'Primer curso',q:[['calc','alg','finf','tcir'],['ppe','lp','fss','oge'],['coe']]},
+    2:{t:'Segundo curso',q:[['sisd','cice','fes','xi'],['ssc','gpl','acp','xii'],['riog','sdh']]},
+    3:{t:'Tercer curso',var:{elec:E(),sist:{q:[['tirt','tds','co','com','ticis'],['em','sr','rd','tc','xist'],[]]}}},
+    4:{t:'Cuarto curso',var:{elec:E(),sist:{q:[['ant','cm'],[],[],['tfg']],opt:['pp','aacf','apie','cq','es','isdp','stird','sgns','radar','tsce'],optNota:'Todas son de 6 créditos salvo las Prácticas Profesionales, de 12.'}}}}}
+};
+
+
+// ============ FIN DE LOS DATOS ============
+
+// ============ GUÍAS DOCENTES (resumen en castellano de la guía oficial) ============
+const GUIA={
+sisd:{codigo:'102712',creditos:6,tipo:'Obligatoria',periodo:'Primer cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Fran Fabra Cervellera','franciscojose.fabra@uab.cat'],
+  equipo:['Rafael Terris Gallego','Alda Xhafa','Miquel Garcia Fernandez'],
+  prereq:'Es la continuación de Fundamentos de Señales y Sistemas: se recomienda haberla cursado y aprobado.',
+  objetivos:['Entender la representación de las señales discretas y sus propiedades.','Analizar los sistemas discretos y describirlos de formas alternativas.','Representar señales y sistemas en el dominio de la frecuencia y en el dominio Z.','Diseñar filtros digitales básicos.','Relacionar las señales discretas con el muestreo y la reconstrucción de señales analógicas.','Usar Matlab para resolver problemas de procesado digital de señal.'],
+  contenidos:[['Señales y sistemas discretos',['Señales: propiedades, transformaciones y señales básicas','Sistemas: propiedades y sistemas básicos','Convolución','Ecuaciones en diferencias finitas']],
+    ['Representación frecuencial',['Transformada de Fourier: definición, propiedades, teorema de convolución','DFT: definición, propiedades, convolución circular','Correlación y espectro','Diezmado e interpolación']],
+    ['Muestreo y reconstrucción',['Muestreo periódico','El muestreo en el dominio de la frecuencia','Reconstrucción de señales de banda limitada: teorema de Nyquist','Cambio de la frecuencia de muestreo']],
+    ['Representación en el dominio Z',['Transformada Z: definición y propiedades','Transformada Z inversa','Función de transferencia y respuesta frecuencial']],
+    ['Análisis de sistemas',['Sistemas inversos, de fase mínima y pasa-todo','Sistemas de fase lineal','Introducción al diseño de filtros FIR e IIR']]],
+  horas:[['Clases de teoría',36],['Clases de problemas',12],['Prácticas de laboratorio',12],['Tutorías',2],['Preparación de prácticas',12],['Estudio y problemas',64]],
+  eval:[['Examen parcial 1','32 %'],['Examen parcial 2','48 %'],['Prácticas (no recuperables)','20 %'],['Actividades de seguimiento','hasta 20 %, solo si sube la nota'],['Examen de recuperación','80 %, sustituye a los parciales']],
+  formula:['AC = máx(0.4·P1 + 0.6·P2, P2)','NE = AC, o la nota del examen de recuperación si te presentas','NF = máx(0.8·NE + 0.2·NP, 0.8·(0.8·NE + 0.2·NP) + 0.2·NS)','Apruebas con NF ≥ 5'],
+  notas:['El parcial 1 no libera materia: los contenidos son acumulativos.','Los repetidores pueden conservar la nota de prácticas.','No hay evaluación única.','No avaluable solo si no te presentas a ningún examen.'],
+  ia:'Permitida si se indica qué partes se han generado, con qué herramientas y con una reflexión crítica sobre su uso.',
+  software:'Matlab, en prácticas y también como apoyo en teoría y problemas.',
+  biblio:['Hwei P. Hsu, Señales y sistemas, 2.ª ed., McGraw-Hill, 2012','J. G. Proakis, D. G. Manolakis, Tratamiento digital de señales, 4.ª ed., Pearson, 2007','A. V. Oppenheim, R. W. Schafer, Tratamiento de señales en tiempo discreto, 3.ª ed., Pearson, 2012'],
+  grupos:'Teoría: grupos 31 y 32 (mañana) y 51 (tarde). Catalán y castellano.'},
+riog:{codigo:'102683',creditos:9,tipo:'Obligatoria',periodo:'Anual',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Pedro Antonio de Paco Sánchez','pedro.depaco@uab.cat'],
+  equipo:['Gary Junkin','Lluís Acosta Basagañas (externo)'],
+  prereq:'Se recomienda haber aprobado Campos y Ondas Electromagnéticas.',
+  objetivos:['Usar con soltura la notación fasorial de los campos.','Entender la continuidad de los campos en un cambio de medio.','Plantear la ecuación de onda y la solución de onda plana, y relacionar β, λ y v_p.','Calcular la densidad de potencia y analizar la polarización de una onda.','Resolver la reflexión y transmisión en incidencia normal y oblicua (leyes de Snell).','Modelar la línea de transmisión con elementos distribuidos y su ecuación de onda.','Plantear la onda estacionaria y desplazar Γ y la impedancia a lo largo de la línea.','Calcular la potencia en la línea y relacionar la geometría de coaxial, microstrip y stripline con sus parámetros.'],
+  contenidos:[['Radiación',['Introducción al electromagnetismo y espectro','Ecuaciones de Maxwell en forma diferencial e integral','Condiciones de contorno entre dos medios','Ecuación de onda unidimensional','Ondas planas en medios materiales y su propagación','Solución general de onda plana','Flujo de potencia: vector de Poynting','Polarización de ondas planas','Reflexión en un cambio de medio','Incidencia oblicua entre dos dieléctricos']],
+    ['Líneas de transmisión',['Teoría de líneas de transmisión','La línea sin pérdidas','Líneas cargadas y onda estacionaria','Análisis de los campos en la línea y tecnologías de fabricación']],
+    ['Smith, adaptación y guías',['Carta de Smith','Redes de adaptación','Guías de onda de paredes conductoras: sección rectangular y circular']]],
+  horas:[['Clases magistrales',48],['Seminarios de problemas',12],['Sesiones del Laboratorio de Comunicaciones',30],['Preparación e informes de laboratorio',30],['Tutorías de RiOG',15],['Tutorías de laboratorio',15],['Problemas y casos',15],['Estudio personal',35]],
+  eval:[['Examen 1 (radiación)','30 %'],['Examen 2 (líneas de transmisión)','30 %'],['Prácticum de laboratorio (no recuperable)','40 %'],['Examen de síntesis y recuperación','60 %, recupera la teoría']],
+  formula:['NF = máx(0.5·EX1 + 0.5·EX2, EX_REC)·0.6 + LAB·0.4','LAB = 0.6·laboratorio + 0.4·SIMAL','Laboratorio: 10 sesiones, 6 % cada una','SIMAL: 8 evaluaciones, 5 % cada una'],
+  notas:['Para ir a la recuperación debes haber sido evaluado de al menos 2/3 de la nota.','Como el laboratorio no se recupera, hay que presentarse al menos a uno de los dos exámenes.','No hay evaluación única.'],
+  ia:'No se permite el uso de IA.',
+  software:'No especificado en la guía.',
+  biblio:['F. Dios, D. Artigas, J. Recolons, A. Comerón, F. Canal, Campos electromagnéticos, Edicions UPC, 1998','D. M. Pozar, Microwave Engineering, 4.ª ed., Wiley, 2011','S. Ramo, J. Whinnery, T. Van Duzer, Fields and Waves in Communication Electronics, Wiley, 1994','J. Bará, Circuitos de microondas con líneas de transmisión, Edicions UPC, 1996'],
+  grupos:'Teoría: grupos 31 y 33 (mañana). Prácticas de aula en catalán; teoría y laboratorio en catalán y castellano.'},
+sdh:{curso:'2026-27',plan:'Plan nuevo',codigo:'102684',creditos:9,tipo:'Obligatoria',periodo:'Anual (2/3 de la materia en el primer cuatrimestre; 1/3 y todas las prácticas en el segundo)',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Mercedes Rullan Ayza','mercedes.rullan@uab.cat'],
+  equipo:['Jordi Sacristan Gil','Joaquín Saiz Alcaine','Victor Montilla Gispert'],
+  prereq:'No hay requisitos formales, pero se recomienda haber cursado Fundamentos de Informática y Teoría de Circuitos y Electrónica de primero.',
+  objetivos:['Entender el papel de los sistemas digitales en las TIC y que un computador no es más que un sistema digital de cierta complejidad.','Diseñar e implementar circuitos digitales de complejidad media-baja con puertas lógicas y dispositivos reconfigurables (FPGA).','Resolver sistemas complejos con arquitecturas unidad de proceso – unidad de control (UP-UC), cableadas y microprogramadas.','Conocer la arquitectura de computadores y diseñar un procesador RISC-V de código abierto: versiones microprogramada (RVuabM), cableada (RVuabC) y pipeline (RVuabPL).'],
+  contenidos:[['Bloque 1 · Circuitos combinacionales',['Señales y sistemas digitales; descripción de un sistema digital; sistemas electrónicos digitales','Transistores MOS; puertas AND, OR e INV; síntesis como refinamiento progresivo','Circuito combinacional; síntesis desde tablas: ROM y puertas lógicas','Álgebra de Boole y tablas de verdad','Puertas NAND, NOR, XOR, NXOR; buffers tri-state','Prestaciones: tiempo de respuesta y coste hardware','SystemVerilog: ejemplos','Módulos combinacionales: multiplexores, decodificadores y memorias ROM']],
+    ['Bloque 2 · Circuitos secuenciales',['Necesidad y definición de los circuitos secuenciales; estados y sincronización; reloj, reset y set','Descripción explícita: grafos de comportamiento y tablas','Biestables, flip-flops y latches','Síntesis desde tablas; máquinas de Moore y Mealy; codificación de estados','Registros, contadores y memorias','Máquinas de estados finitos: definición, implementación y tiempo de respuesta','SystemVerilog y ejemplos de máquinas de estados en SV','Síntesis de circuitos secuenciales desde un algoritmo','Implementación física: FPGA y otras estrategias']],
+    ['Bloque 3 · Arquitectura UP-UC y diseño de un procesador RISC-V',['Arquitectura unidad de proceso – unidad de control','UP con multiplexores y con buses','UC con secuenciador basada en ROM','Estructura de un computador: CPU, memoria, E/S y buses; repertorio y tipos de instrucciones; modos de direccionamiento','Von Neumann frente a Harvard; CISC frente a RISC','Procesador RISC-V (RV32I): implementación microprogramada (RVuabM), cableada o monociclo (RVuabC) y planteamiento pipeline (RVuabPL)']]],
+  horas:[['Clases de problemas',46],['Prácticas de laboratorio',18],['Estudio de casos',18],['Resolución de problemas',32],['Trabajos complementarios de prácticas',10],['Estudio del material audiovisual',18],['Estudio autónomo',37],['Preparación del laboratorio',30]],
+  eval:[['3 pruebas parciales (PP1 en octubre, PP2 en enero, PP3 en junio)','50 %'],['Prácticas de laboratorio, PL (6 sesiones en el 2.º cuatrimestre, asistencia obligatoria; no recuperables)','30 %'],['Entrega periódica de problemas en línea y visualización de vídeos, Pb (no recuperable)','20 %']],
+  formula:['AC = 0,5·PP + 0,3·PL + 0,2·Pb, con PP = (PP1 + PP2 + PP3)/3','Para aprobar: AC ≥ 5, cada parcial ≥ 4, PP ≥ 5 y PL ≥ 5','Si al final PP < 5 o PL < 5: nota = mín(AC; 4,5)'],
+  notas:['No hay recuperación en el primer cuatrimestre: todas las recuperaciones son en junio-julio.','Un parcial (o dos) por debajo de 4 se recupera con su examen, que debe llegar a 5; si los tres están por debajo de 4, examen de toda la materia (nota ≥ 5).','Puede haber un examen de prácticas si hace falta completar la evaluación.','Los repetidores con prácticas aprobadas pueden no repetirlas: PL = 5.','No hay evaluación única. No evaluable si no se participa en ninguna prueba ni práctica.','Las clases son de problemas en grupos de unas 40 personas: los vídeos se ven antes de clase.'],
+  ia:'Solo como apoyo (búsqueda bibliográfica o de información), indicando qué partes se han generado, con qué herramientas y con una reflexión crítica. Usarla para resolver ejercicios, prácticas u otras actividades evaluables es una irregularidad que se califica con un 0.',
+  software:'Quartus II 13.0 sp1 Web Edition (Altera), sin licencia. Descripción en SystemVerilog.',
+  biblio:['Apuntes de la asignatura','S. Harris, D. Harris, Digital Design and Computer Architecture, RISC-V Edition, 2021','D. Patterson, A. Waterman, The RISC-V Reader: An Open Architecture Atlas, 2017','D. A. Patterson, J. L. Hennessy, Computer Organization and Design RISC-V Edition, 2021','J.-P. Deschamps, E. Valderrama, L. Terés, Digital Systems: From Logic Gates to Processors, Springer, 2017','J. Pons, D. Bardés, D. Mateo, J. Altet, Exercicis resolts de Disseny Digital, 2024','MOOC de Coursera: Sistemas Digitales (español e inglés)'],
+  grupos:'Grupos de aula 311, 312, 313 (mañana) y 511 (tarde); laboratorio 311 a 319. Catalán y castellano.',
+  alt:{curso:'2025-26',plan:'Plan antiguo',codigo:'102684',creditos:9,tipo:'Obligatoria',periodo:'Primer cuatrimestre',
+    titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+    coord:['Mercedes Rullan Ayza','mercedes.rullan@uab.cat'],
+    equipo:['Joaquín Saiz Alcaine','Antonio José Velasco González','Lluís Antoni Terés Terés','Victor Montilla Gispert','Raimon Casanova Mohr'],
+    prereq:'No hay requisitos formales, pero se recomienda haber cursado Fundamentos de Informática y Teoría de Circuitos y Electrónica de primero.',
+    objetivos:['Entender el papel de los sistemas digitales en las TIC y que un computador no es más que un sistema digital de cierta complejidad.','Diseñar e implementar circuitos digitales de complejidad media-baja con puertas lógicas y dispositivos reconfigurables.','Resolver sistemas complejos con arquitecturas UP-UC cableadas y microprogramadas.','Diseñar un procesador RISC-V de código abierto: versiones microprogramada (RVuabM) y cableada (RVuabC), y comparar su coste y prestaciones.'],
+    contenidos:[['Bloque 1 · Circuitos combinacionales',['Señales y sistemas digitales; descripción de un sistema digital; sistemas electrónicos digitales','Transistores MOS; puertas AND, OR e INV; síntesis como refinamiento progresivo','Circuito combinacional; síntesis desde tablas: ROM y puertas lógicas','Álgebra de Boole y tablas de verdad','Puertas NAND, NOR, XOR, NXOR; buffers tri-state','Prestaciones: tiempo de respuesta y coste hardware','Módulos combinacionales: multiplexores, decodificadores, planos AND-OR (PLA)','Herramientas de síntesis: síntesis desde algoritmos']],
+    ['Bloque 2 · Circuitos secuenciales',['Necesidad y definición de los circuitos secuenciales; estados y sincronización; reloj, reset y set','Descripción explícita: grafos de comportamiento y tablas','Biestables, flip-flops y latches','Síntesis desde tablas; máquinas de Moore y Mealy; codificación de estados','Registros, contadores y memorias','Máquinas de estados finitos: definición, implementación y tiempo de respuesta','VHDL y ejemplos de máquinas de estados en VHDL','Síntesis de circuitos secuenciales desde un algoritmo','Implementación física: FPGA y otras estrategias']],
+    ['Bloque 3 · Arquitectura UP-UC y diseño de un procesador',['Arquitectura unidad de proceso – unidad de control','UP con multiplexores y con buses','UC como máquina de estados con bloques y puertas, o con secuenciador y ROM','Procesador simple: Von Neumann frente a Harvard; unidades funcionales y buses','Repertorio de instrucciones, lenguaje máquina, microinstrucciones y microprogramas','RISC-V: arquitectura Harvard; ciclos de búsqueda, decodificación y ejecución','RVuabM (UC microprogramada) y RVuabC (UC cableada monociclo)']]],
+    horas:[['Clases presenciales',26],['Clases de problemas',18],['Prácticas de laboratorio',18],['Estudio de casos',18],['Trabajos complementarios de prácticas',10],['Estudio autónomo',39],['Estudio del material audiovisual',18],['Preparación del laboratorio',30],['Resolución de problemas',32]],
+    eval:[['2 pruebas parciales (PP1 y PP2) y/o prueba final','50 %'],['Prácticas de laboratorio, PL (no recuperables)','30 %'],['Entrega periódica de problemas y visualización de vídeos, Pb (no recuperable)','20 %']],
+    formula:['AC = 0,5·PP + 0,3·PL + 0,2·Pb, con PP = (PP1 + PP2)/2','Para aprobar: AC ≥ 5, PP1 y PP2 ≥ 4, PP ≥ 5 y PL ≥ 5','Si al final PP < 5 o PL < 5: nota = mín(AC; 4,5)'],
+    notas:['Un parcial por debajo de 4 se recupera con el examen de su bloque (nota ≥ 5); si son los dos, examen de toda la materia.','Las prácticas: desarrollo y simulación de partes de un pequeño procesador, implementado al final en una FPGA, por parejas y en sesiones de 3 h.','Los repetidores con prácticas aprobadas pueden no repetirlas: PL = 5.','No hay evaluación única. No evaluable si no se participa en ninguna prueba ni práctica.'],
+    ia:'Solo como apoyo (búsqueda bibliográfica o de información), indicando qué partes se han generado, con qué herramientas y con una reflexión crítica. Usarla para resolver ejercicios, prácticas u otras actividades evaluables es una irregularidad que se califica con un 0.',
+    software:'Quartus II 9.0 Web Edition (Altera), sin licencia. Descripción en VHDL.',
+    biblio:['Apuntes de la asignatura y MOOC de Coursera: Sistemas Digitales','J.-P. Deschamps, E. Valderrama, L. Terés, Digital Systems: From Logic Gates to Processors, Springer, 2017','J.-P. Deschamps, E. Valderrama, L. Terés, Complex Digital Systems, Springer, 2019','J. Pons, D. Bardés, D. Mateo, J. Altet, Exercicis resolts de Disseny Digital, 2024','E. Valderrama, J.-P. Deschamps, M. Rullan, L. Terés, Arquitecturas UP-UC: de los sistemas digitales a medida al procesador RISC-V (apuntes del bloque 3)','T. L. Floyd, Digital Systems Fundamentals, Prentice Hall','J. Saiz, A. Portero, R. Aragonès, Desenvolupament del microprocessador LittleProc, Servei de Publicacions de la UAB'],
+    grupos:'Grupos de aula 311, 312, 313, 331 y 511; laboratorio 311 a 320. Sobre todo en catalán.'}},
+cice:{codigo:'102689',creditos:6,tipo:'Obligatoria',periodo:'Primer cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Enrique Alberto Miranda Castellano','enrique.miranda@uab.cat'],
+  equipo:['David Jiménez Jiménez','Enrique Alberto Miranda Castellano'],
+  prereq:'Teoría de circuitos (circuitos lineales con R, C y L), electrostática básica (campo y potencial) y matemáticas (complejos y ecuaciones diferenciales básicas).',
+  objetivos:['Tener una visión general de los dispositivos electrónicos básicos, sobre todo diodos y transistores, y de sus modelos para analizar y diseñar circuitos.','Comprender la física de los semiconductores, los dispositivos electrónicos y fotónicos y su tecnología de fabricación.','Relacionar procesos tecnológicos, prestaciones de los dispositivos y su funcionamiento en circuitos mediante modelos y simulaciones.'],
+  contenidos:[['Física de semiconductores y transporte',['Introducción a los semiconductores. Concentración de portadores','Propiedades del transporte de portadores','Cargas y campos. Diagramas de bandas']],
+    ['El diodo de unión PN',['Electrostática de la unión PN','Unión PN fuera del equilibrio. Corrientes','Aplicaciones: recortadores, rectificadores…']],
+    ['El transistor bipolar',['Tipos de transistores. Diagramas de bandas','Curvas corriente-tensión','Aplicaciones: polarización, amplificadores…']],
+    ['El transistor MOS',['La estructura MOS','El MOSFET de canal largo','Escalado del MOSFET y efectos de canal corto','Aplicaciones: puertas lógicas y circuitos CMOS']],
+    ['Dispositivos fotónicos',['Propiedades de la luz e interacción luz-materia','LED y láser','Detectores de luz y células solares','Aplicaciones circuitales sencillas']]],
+  horas:[['Clases magistrales',36],['Seminarios de problemas',12],['Sesiones de laboratorio',12],['Tutorías',12],['Preparación del laboratorio',8],['Estudio',58]],
+  eval:[['Primer parcial','37.5 %'],['Segundo parcial','37.5 %'],['Prácticas (obligatorias, no recuperables)','25 %'],['Vía B: examen total escrito','75 %']],
+  formula:['Cada parcial se aprueba con un mínimo de 5 y los dos se pueden recuperar al final','Valor = 0.25·Prácticas + 0.375·P1 + 0.375·P2','Si no apruebas las tres partes y Valor ≥ 5, la nota del expediente es 4.8'],
+  notas:['Todas las prácticas son de asistencia obligatoria; se entrega un informe previo y otro al acabar cada sesión.','Los repetidores pueden convalidar las prácticas con su nota.','No hay evaluación única.','No avaluable si no te presentas a ninguna actividad.'],
+  ia:'No se permite el uso de IA en ninguna fase.',
+  software:'Programas de simulación estándar instalados en los laboratorios.',
+  biblio:['L. Prat Viñas, J. Calderer Cardona, Dispositius electrònics i fotònics. Fonaments, Edicions UPC, 2001','T. Floyd, Electronic Devices, 7.ª ed., Prentice Hall, 2005','R. F. Pierret, Fundamentos de semiconductores; G. W. Neudeck, El diodo PN de unión y El transistor bipolar de unión; R. F. Pierret, Dispositivos de efecto de campo','J. Wilson, Optoelectronics: an introduction, Prentice Hall'],
+  grupos:'Teoría: grupo 31 (mañana) y 51 (tarde). Catalán y castellano; el material del curso está en catalán.'},
+finf:{curso:'2024-25',codigo:'103799',creditos:9,tipo:'Formación básica',periodo:'Primer cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Joan Oliver Malagelada','joan.oliver@uab.cat'],
+  equipo:['Vanessa Moreno Font','Sergi Carreras Sala','Marc Vallribera Ros'],
+  prereq:'No hay requisitos previos.',
+  objetivos:['Introducir los conceptos generales del computador.','Conocer la arquitectura básica de un procesador genérico y su funcionamiento a bajo nivel.','Aprender metodología de la programación y aplicarla a programas en C.'],
+  contenidos:[['Fundamentos de programación',['Informática y computación','Representación de la información','Diseño de algoritmos','Iniciación al C','Estructuras de control','Funciones y procedimientos','Vectores (listas y tablas)','Estructuras (registros)','Ficheros']],
+    ['Fundamentos del computador',['Componentes digitales','Arquitectura del ordenador','Lenguaje máquina y ensamblador','Sistemas operativos, ficheros y bases de datos']]],
+  horas:[['Clases de teoría',33],['Problemas y prácticas',32],['Trabajo autónomo',150]],
+  eval:[['Pruebas de evaluación (bloques A y B, 50 % cada uno)','65 %'],['Recopilaciones de clase (no recuperables)','10 %'],['Prácticas (mínimo 5, no recuperables)','25 %']],
+  formula:['Cada bloque (A: programación, B: computadores) necesita un mínimo de 3.5 para promediar','Apruebas con nota final ≥ 5 y prácticas aprobadas','Examen final para recuperar el bloque no superado'],
+  notas:['Las prácticas se evalúan por preparación, ejecución, informe de sesión e informe final.','Si es posible, se avisa a principio de curso de la convalidación de prácticas para repetidores.'],
+  ia:'No especificado en la guía.',
+  software:'Entorno de desarrollo PellesC para programar en C.',
+  biblio:['J. Oliver, Introducció als Fonaments de computadors amb EduP12, CVC, 2012','A. Prieto, A. B. Prieto, Conceptos de informática, McGraw-Hill, 2005','J. Antonakos, K. Mansfield, Programación estructurada en C, Prentice Hall, 2000','G. J. Bronson, C++ para Ingeniería y Ciencias, Thomson, 2000'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+calc:{curso:'2024-25',codigo:'103796',creditos:6,tipo:'Formación básica',periodo:'Primer cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Gil Solanes Farres','gil.solanes@uab.cat'],
+  equipo:['Josep Maria Burgues Badia','Laura Rodriguez Cima','Carmelo Puliatti','Alba Aguilera Montserrat'],
+  prereq:'Sin requisitos oficiales, pero es fundamental dominar las matemáticas básicas y el cálculo de bachillerato (límites, continuidad, derivadas e integrales).',
+  objetivos:['Dominar el cálculo de una variable para resolver problemas de ingeniería.','Dar soporte a las asignaturas del grado que usan funciones reales de una variable.','Usar con soltura los números complejos y la trigonometría.'],
+  contenidos:[['Números complejos',['Funciones trigonométricas e inversas','Ecuaciones trigonométricas','Complejos: operaciones, raíces, ecuaciones de 2.º grado','Módulo, argumento y fórmula de Euler','Polinomios, raíces y teorema fundamental del álgebra']],
+    ['Continuidad',['Continuidad y límites','Teoremas de funciones continuas. Exponenciales y logaritmos']],
+    ['Cálculo diferencial',['Derivadas y regla de la cadena','Teorema del valor medio y monotonía','Extremos y optimización','Límites con derivadas','Fórmula de Taylor']],
+    ['Cálculo integral',['Integral de Riemann','Teorema fundamental y regla de Barrow','Cálculo de primitivas','Aplicaciones de la integral']],
+    ['Ecuaciones diferenciales',['Variables separadas','Lineales de primer orden','Lineales de segundo orden con coeficientes constantes','Problemas de planteamiento']]],
+  horas:[['Teoría y problemas',45],['Sesiones supervisadas (seminarios)',24],['Trabajo del alumno',76]],
+  eval:[['Prueba parcial 1','40 %'],['Prueba parcial 2','45 %'],['Seminarios','15 %'],['Recuperación (R1 y R2)','sustituye a P1 y P2 si es mejor']],
+  formula:['NF = 0.40·P1 + 0.45·P2 + 0.15·S','Con recuperación: NF = 0.40·máx(P1,R1) + 0.45·máx(P2,R2) + 0.15·S','Evaluación única: NF = 0.85·R + 0.15·S'],
+  notas:['Se pide una nota mínima de 2 en las pruebas.','Hay 5 sesiones de seminario a lo largo del semestre.'],
+  ia:'No especificado en la guía.',
+  software:'No hay prácticas de ordenador; se recomienda Maxima o Wolfram Alpha.',
+  biblio:['S. L. Salas, E. Hille, Calculus Vol. 1, Reverté, 2002','D. Pestana et al., Curso práctico de Cálculo y Precálculo, Ariel, 2000','D. G. Zill, Ecuaciones diferenciales con aplicaciones de modelado, Thomson, 1997','F. Carreras et al., Ecuaciones diferenciales, Ed. UAB, 1994'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+tce:{curso:'2024-25',codigo:'102709',creditos:9,tipo:'Formación básica',periodo:'Primer cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Juan Jose Garcia Garcia','joan.garcia@uab.cat'],
+  equipo:['Maria Aranzazu Uranga del Monte'],
+  prereq:'No hay requisitos previos.',
+  objetivos:['Familiarizarse con la teoría, las técnicas y los dispositivos básicos del análisis de circuitos electrónicos para telecomunicaciones.'],
+  contenidos:[['Elementos, variables y ecuaciones',['Variables eléctricas y criterio de signos','Resistencias y fuentes','Potencia','Leyes de Kirchhoff y fuentes dependientes','Asociaciones, transformación de fuentes y divisores']],
+    ['Circuitos resistivos',['Método de nudos','Superposición','Thévenin y Norton']],
+    ['Circuitos dinámicos de 1.er orden',['Condensadores y bobinas','Ecuación del circuito','Excitación constante y constante a tramos']],
+    ['Régimen sinusoidal',['Fasores','Impedancia y admitancia','Potencia y factor de potencia']],
+    ['Semiconductores y diodo',['Unión PN','Modelos DC y recta de carga','Circuitos con diodos']],
+    ['Amplificador operacional',['Modelos lineal y no lineal','Inversor, no inversor, seguidor, sumador, integrador, diferenciador','Comparadores']],
+    ['Bipuertas',['Representaciones matriciales de circuitos']],
+    ['Prácticas de laboratorio',['Simulador Spice','Componentes pasivos','Transitorios','El diodo','El amplificador operacional']]],
+  horas:[['Sesiones de teoría',60],['Sesiones de problemas',70],['Sesiones de prácticas',38]],
+  eval:[['Examen parcial 1','35 %'],['Examen parcial 2','35 %'],['Prácticas (5 obligatorias + examen)','30 %'],['Prueba de síntesis','hasta el 70 %, recupera la teoría']],
+  formula:['NF = 0.7·exámenes + 0.3·prácticas','Prácticas: cada sesión = 30 % informe previo + 70 % cuestionario en el laboratorio; el examen de prácticas vale el 50 % de la nota de prácticas','Para promediar con prácticas, el examen de síntesis debe ser ≥ 5'],
+  notas:['Todas las prácticas son obligatorias; se pueden hacer hasta 2 fuera de fecha con causa justificada.','No avaluable solo si no entregas ningún informe de prácticas ni trabajo.'],
+  ia:'No especificado en la guía.',
+  software:'PSpice 9.1 Student Edition.',
+  biblio:['R. Boylestad, L. Nashelsky, Introducción al análisis de circuitos, Prentice Hall','R. Boylestad, L. Nashelsky, Teoría de circuitos y dispositivos electrónicos, Prentice Hall','A. B. Carlson, Teoría de circuitos, Thomson-Paraninfo, 2002','J. D. Irwin, Análisis básico de circuitos en ingeniería, Prentice Hall, 1997','A. R. Hambley, Electrónica, 2.ª ed., Prentice Hall, 2001'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+fing:{curso:'2024-25',codigo:'103798',creditos:6,tipo:'Formación básica',periodo:'Primer cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Francisco Serra Graells','francesc.serra.graells@uab.cat'],
+  equipo:['Pau Aguila Moliner','Javier Martin Martin','Jordi Bonache Albacete','Jordi Sacristan Riquelme','Raúl Aragonés Ortíz'],
+  prereq:'No hay requisitos previos.',
+  objetivos:['Entender qué significa ser ingeniero: forma de pensar, de atacar problemas y de enfocar proyectos.','Trabajar en grupo temas de la vida profesional: artículos en inglés, estado del arte, patentes, informes y presentaciones.'],
+  contenidos:[['La ingeniería',['Ciencia, tecnología, ingeniería y sociedad','Competencias del ingeniero']],
+    ['Historia y especialidades',['Introducción histórica','Campos de especialización']],
+    ['Resolución de problemas en ingeniería',[]],['Sistemas',['Concepto de sistema','Modelización']],
+    ['Fuentes de información',['Bases de datos','Fiabilidad']],['La comunicación en ingeniería',[]],
+    ['Los estudios de Telecomunicación',['Electrónica y Sistemas','Salidas profesionales']],
+    ['Retos tecnológicos del futuro',['Trabajo en grupo']]],
+  horas:[['Clases magistrales',18],['Conferencias',4],['Seminarios',13],['Trabajos en grupo',50],['Tutorías',16],['Estudio autónomo',37],['Ejercicios individuales',6]],
+  eval:[['Resolución de un problema (informe)','20 %'],['Planificación de un reto (informe y presentación oral)','25 %'],['Resolución de ejercicios','15 %'],['Prueba de síntesis (test + preguntas cortas)','40 %']],
+  formula:['Necesitas más de 3 en cada una de las cuatro actividades','Y que la media ponderada sea ≥ 5'],
+  notas:['Asignatura eminentemente práctica, con trabajos en grupos de 4-5 personas.','No presentado si no entregas ninguna de las actividades 1, 2 y 4.'],
+  ia:'No especificado en la guía.',
+  software:'Ofimática.',
+  biblio:['J. B. Brockman, Introduction to engineering: modeling and problem solving, Wiley, 2009','P. H. Wright, Introducción a la ingeniería, 3.ª ed., Limusa Wiley, 2004','E. Gómez-Senent et al., Introducción a la ingeniería, Ed. UPV, 2007','P. Grech, Introducción a la ingeniería: un enfoque a través del diseño, Prentice Hall, 2001'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+fss:{curso:'2024-25',codigo:'102690',creditos:6,tipo:'Formación básica',periodo:'Segundo cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Rosana Rodriguez Martinez','rosana.rodriguez@uab.cat'],
+  equipo:['Javier Martin Martinez','Ivan Pisa Dacosta','Eden Francisco Corrales Lopez'],
+  prereq:'Cálculo (variable real y compleja, complejos, derivadas e integrales) y teoría básica de circuitos (Kirchhoff, Thévenin-Norton, superposición).',
+  objetivos:['Analizar y caracterizar señales y sistemas, sobre todo lineales.','Conocer la transformada de Laplace y aplicarla a circuitos.','Usar la función de transferencia de un sistema LTI y obtener su diagrama de Bode.','Conocer la transformada de Fourier y aplicarla a señales periódicas, enventanado y fenómeno de Gibbs.','Aplicar energía, potencia, correlación y espectro de señales.'],
+  contenidos:[['Señales y sistemas',['Transformaciones y señales básicas','Linealidad, invariancia, causalidad y estabilidad','Sistemas LTI y convolución']],
+    ['Transformada de Laplace',['Definición y propiedades','Ecuaciones diferenciales','Transformada inversa']],
+    ['Aplicaciones de Laplace',['Circuitos con bobinas y condensadores','Función de transferencia','Polos, ceros y estabilidad','Régimen permanente y diagramas de Bode']],
+    ['Transformada de Fourier',['Definición y señales básicas','Propiedades','Gibbs y enventanado','Señales periódicas: serie de Fourier']],
+    ['Correlación y espectro',['Energía y potencia','Correlación y espectro de energía','Correlación y espectro de potencia']]],
+  horas:[['Clases magistrales',20],['Clases de problemas',15],['Clases de síntesis',10],['Seminarios',5],['Problemas en línea',10],['Trabajo individual',70]],
+  eval:[['Prueba P1','30 %'],['Prueba P2','30 %'],['Prueba P3','30 %'],['4 cuestionarios en línea','10 % (2.5 % cada uno)']],
+  formula:['NF = (P1 + P2 + P3)·9/30 + ΣPol/40','Cada prueba tiene su recuperación (Pr1, Pr2, Pr3)'],
+  notas:['No avaluable si no sacas al menos 0.5 en P1, P2, P3 o en sus recuperaciones.','Los repetidores se evalúan igual que el resto.'],
+  ia:'No especificado en la guía.',
+  software:'No se contempla.',
+  biblio:['S. Haykin, B. Van Veen, Señales y sistemas, Limusa Wiley','A. V. Oppenheim, Signals and Systems, Prentice Hall','A. B. Carlson, Communication Systems, McGraw-Hill','A. Papoulis, M. Bertran, Sistemas y circuitos, Marcombo'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+alg:{curso:'2024-25',codigo:'103795',creditos:6,tipo:'Formación básica',periodo:'Segundo cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Enric Nart Viñals','enric.nart@uab.cat'],
+  equipo:[],
+  prereq:'Sin requisitos; conviene tener claros los números racionales, reales y complejos y algún método para resolver sistemas lineales.',
+  objetivos:['Introducir el álgebra lineal con énfasis en sus técnicas instrumentales.','Pasar con agilidad del concepto abstracto a su manipulación a mano y con ordenador.','Diseñar estrategias eficientes para resolver problemas complejos.'],
+  contenidos:[['Matrices',['Operaciones y matrices especiales (simétricas, Toeplitz, circulantes, hermitianas, ortogonales)','Gauss-Jordan y rango','Invertibilidad y matriz inversa','Sistemas lineales, método de Gauss y teorema de Rouché']],
+    ['Espacios vectoriales',['Subespacios y sistemas generadores','Aplicaciones lineales, núcleo e imagen','Dependencia lineal','Bases, dimensión, coordenadas y cambios de base']],
+    ['Diagonalización y productos escalares',['Determinantes','Valores y vectores propios','Potencias de matrices y sistemas de EDO lineales']]],
+  horas:[['Clases de teoría',30],['Clases de problemas',15],['Seminarios',5],['Estudio de la teoría',31],['Resolución de problemas',60.5]],
+  eval:[['Prueba escrita intermedia','35 %'],['Prueba escrita final','50 %'],['Seminarios (2 entregas)','15 %'],['Reevaluación (examen global)','85 %']],
+  formula:['NF = 0.35·P1 + 0.50·P2 + 0.15·S','Si la media de las pruebas es < 3.5, la nota final no pasa de 3.5','Reevaluación: si el examen ≥ 3.5, 0.85·R + 0.15·S; si llega a 5, apruebas con 5.0'],
+  notas:['Para la reevaluación debes haberte presentado a actividades que sumen al menos el 60 %.'],
+  ia:'No especificado en la guía.',
+  software:'Parte de los seminarios se hace con un programa matemático.',
+  biblio:['Consulta la bibliografía en la guía oficial.'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+fes:{curso:'2024-25',codigo:'102708',creditos:3,tipo:'Obligatoria',periodo:'Segundo cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Daniel Ponsa Mussarra','daniel.ponsa@uab.cat'],
+  equipo:[],
+  prereq:'Sin requisitos, pero se apoya en la programación en C de Fundamentos de Informática.',
+  objetivos:['Introducir los conceptos clave de la ingeniería del software y sus diferencias con la ingeniería civil.','Introducir el análisis y diseño orientado a objetos.','Aprender un lenguaje orientado a objetos: C++.'],
+  contenidos:[['Introducción a la ingeniería del software',['Ciclo de desarrollo y procesos','Planificación de proyectos','Modularización y diseño orientado a objetos','UML: diagrama de clases']],
+    ['Clases, atributos y métodos',['Clase vs objeto','Público y privado','Sobrecarga de funciones']],
+    ['Enumerados, llamadas y memoria dinámica',['Funciones inline','Paso por referencia','Reserva y liberación de memoria','Aritmética de punteros']],
+    ['Constructores, destructores y operadores',['Operador de asignación','this y friend','Streams: << y >>']],
+    ['Herencia, polimorfismo y genericidad',['Miembros protegidos','Funciones virtuales','Funciones y clases template']]],
+  horas:[['Clases de teoría',12],['Clases de problemas',6],['Prácticas',6],['Pruebas de evaluación',3],['Preparación de prácticas',15],['Problemas fuera del aula',8],['Estudio',23],['Tutorías',2]],
+  eval:[['Examen parcial ExP1','18 %'],['Examen parcial ExP2','42 %'],['Práctica de C++ en grupo','30 %'],['Problemas y actividades propuestas','10 %']],
+  formula:['Condición para aprobar: 0.3·ExP1 + 0.7·ExP2 + 0.1·Prob ≥ 5','Si se cumple: NF = 0.18·ExP1 + 0.42·ExP2 + 0.1·Prob + 0.3·Prac','Si no: NF = mín(4.5, la misma media ponderada)'],
+  notas:['La parte de C++ se trabaja con metodología «aprender haciendo», con vídeos previos.','En la práctica se valora la contribución de cada miembro del grupo.'],
+  ia:'No especificado en la guía.',
+  software:'Entorno de programación en C++.',
+  biblio:['Consulta la bibliografía en la guía oficial.'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+est:{curso:'2024-25',codigo:'103797',creditos:6,tipo:'Formación básica',periodo:'Segundo cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Antoni Sintes Blanc','antoni.sintes@uab.cat'],
+  equipo:['Laura Brustenga Moncusi','Sandra Cobo Ollero'],
+  prereq:'No hay requisitos previos.',
+  objetivos:['Introducir las herramientas estadísticas básicas para analizar datos de experimentos u observaciones.','Usarlas correctamente e interpretar los resultados, con prácticas en R.'],
+  contenidos:[['Estadística descriptiva',['Variables y data frames','Frecuencias, tablas e histogramas','Localización y dispersión','Correlación y recta de regresión','Distribuciones conjuntas, marginales y condicionales']],
+    ['Probabilidad',['Combinatoria','Probabilidad condicionada, independencia y Bayes','Variables aleatorias, densidad y distribución','Esperanza, varianza y momentos','Bernoulli, binomial, Poisson, uniforme, exponencial, normal','Teorema central del límite y leyes de los grandes números']],
+    ['Vectores aleatorios y procesos estocásticos',['Normal bivariante, covarianza y correlación','Khi-cuadrado, Rayleigh y Rice','Procesos de Poisson y cadenas de Markov']],
+    ['Inferencia estadística',['Estimación puntual e intervalos de confianza','Tests para medias y proporciones','Comparación de medias y proporciones','Tests khi-cuadrado']]],
+  horas:[['Clases de teoría',26],['Clases de problemas',12],['Clases de prácticas',12],['Tutorías',7],['Trabajo autónomo',74]],
+  eval:[['Examen E1','25 %'],['Examen E2','30 %'],['Prácticas con R (P, no recuperables)','25 %'],['Entrega de problemas (Pb)','20 %'],['Examen de recuperación ER','sustituye a E1 + E2']],
+  formula:['AC = 0.25·E1 + 0.30·E2 + 0.25·P + 0.20·Pb','Apruebas si AC ≥ 5 y mín(E1, E2) ≥ 3','En la recuperación hace falta ER ≥ 3; también sustituye Pb si te favorece'],
+  notas:['La nota P exige asistir al 90 % de las sesiones: 20 % asistencia, 40 % entregas, 40 % controles.','Para ir a recuperación debes haber sido evaluado de más del 65 %.','No hay evaluación única.','No avaluable si participas en menos del 50 % de la evaluación.'],
+  ia:'No especificado en la guía.',
+  software:'R (R Core Team).',
+  biblio:['R. Delgado, Probabilidad y Estadística para Ciencias e Ingenierías, Delta, 2008','D. Peña, Fundamentos de Estadística, Alianza, 2008','S. M. Kay, Intuitive probability and random processes using Matlab, Kluwer, 2006','M. DeGroot, M. Schervish, Probability and Statistics, Addison Wesley, 2002'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'},
+fb:{curso:'2024-25',codigo:'102707',creditos:9,tipo:'Formación básica',periodo:'Segundo cuatrimestre',
+  titulaciones:['Ingeniería Electrónica de Telecomunicación','Ingeniería de Sistemas de Telecomunicación'],
+  coord:['Angel Lizana Tutusaus','angel.lizana@uab.cat'],
+  equipo:['Marc Manera Miret','Alessio Celi','Josep Gutiérrez Martínez'],
+  prereq:'Muy recomendable: operaciones con vectores, derivar e integrar funciones de una variable y nociones de integrales de línea, superficie y volumen y de derivadas parciales.',
+  objetivos:['Conocimiento básico del campo electromagnético: de la electrostática y la magnetostática a las ecuaciones de Maxwell.','Soluciones de las ecuaciones de Maxwell, entre ellas las ondas electromagnéticas.','Breve introducción a ondas, mecánica y termodinámica.'],
+  contenidos:[['Análisis vectorial',['Gradiente, divergencia y rotacional','Teoremas de la divergencia, Stokes y Helmholtz','Otros sistemas de coordenadas']],
+    ['Electrostática',['Ley de Coulomb y campo eléctrico','Potencial','Poisson y Laplace','Conductores','Energía']],
+    ['Magnetostática',['Corriente y ley de Ohm','Biot-Savart','Fuerza de Lorentz','Teorema de Ampère','Potencial vector']],
+    ['Medios materiales',['Dipolos eléctrico y magnético','Dieléctricos y vector D','Materiales magnéticos y vector H']],
+    ['Campos lentamente variables',['Ley de Faraday','Inductancia mutua y autoinductancia','Transformador','Energía magnética']],
+    ['Campos electromagnéticos',['Corriente de desplazamiento','Ecuaciones de Maxwell','Condiciones de contorno','Teorema de Poynting','Radiación']],
+    ['Ondas',['Ecuación de ondas y superposición','Ondas EM en dieléctricos y conductores','Ondas guiadas','Espectro electromagnético']],
+    ['Mecánica y termodinámica',['Leyes de Newton y energía','Sólido rígido y oscilador armónico','Temperatura, calor y propiedades térmicas']]],
+  horas:[['Clases de teoría',45],['Clases de problemas',30],['Ejercicios y problemas',67],['Trabajo individual',70]],
+  eval:[['Prueba tema 1','1 punto'],['Prueba temas 2-3','3 puntos'],['Prueba temas 4-5','3 puntos'],['Prueba temas 6-7','3 puntos'],['Trabajo a elegir de una lista','1 punto'],['Examen de síntesis (recuperación)','10 puntos']],
+  formula:['P = suma de todas las puntuaciones, sin nota mínima','Si P ≤ 9, NF = P; si P > 9, NF = P − (P − 9)/2','Apruebas con P ≥ 5'],
+  notas:['Para ir a recuperación debes haberte presentado a 2/3 de la nota y tener más de 2 puntos en los exámenes.','No avaluable si te presentas a 3 pruebas o menos y no vas a la recuperación.'],
+  ia:'No especificado en la guía.',
+  software:'No especificado en la guía.',
+  biblio:['Consulta la bibliografía en la guía oficial.'],
+  grupos:'Consulta los grupos e idiomas en la guía oficial.'}
+};
+
+const $=(t,a,...k)=>{const e=document.createElement(t);for(const x in a||{}){const v=a[x];if(v==null||v===false)continue;if(x.startsWith('on'))e.addEventListener(x.slice(2),v);else e.setAttribute(x,v);}for(const c of k.flat())if(c!=null)e.append(c);return e;};
+const view=document.getElementById('view'),nav=document.getElementById('nav');
+const Q=['Primer cuatrimestre','Segundo cuatrimestre','Anuales','Semestre por determinar','Optativas'],ORD=['1.º','2.º','3.º','4.º'];
+const PK=['antiguo','nuevo'],VK=['elec','sist'];
+const PN=p=>PLANES[p].t+(PLANES[p].y?' ('+PLANES[p].y+')':'');
+const all=Object.keys(SUBJ).filter(k=>SUBJ[k].page);
+const C=(p,c)=>PLANES[p].cursos[c];
+const K=(p,c,v)=>{const x=C(p,c);return x.var?x.var[v||'elec']:x;};
+const idsK=k=>[...k.q.flat(),...(k.opt||[])];
+const ids=(p,c)=>{const x=C(p,c);return x.var?[...new Set(VK.flatMap(v=>idsK(x.var[v])))]:idsK(x);};
+const nPlan=p=>new Set([1,2,3,4].flatMap(c=>ids(p,c))).size;
+// dónde está una asignatura: lista de [plan, curso, periodo, variante|null]
+const whereAll=id=>{const r=[];for(const p of PK)for(const c of [1,2,3,4]){const x=C(p,c);for(const v of x.var?VK:[null]){const k=x.var?x.var[v]:x;
+  for(let q=0;q<4;q++)if((k.q[q]||[]).includes(id))r.push([p,c,q,v]);if((k.opt||[]).includes(id))r.push([p,c,4,v]);}}return r;};
+const per=q=>q===2?'anual':q===4?'optativa':Q[q].toLowerCase();
+const cntK=k=>{const n=k.q.reduce((s,l)=>s+(l||[]).length,0),o=(k.opt||[]).length;return n+o?n+' asignaturas'+(o?' + '+o+' optativas':''):'Pendiente';};
+const cnt=(p,c)=>{const x=C(p,c);return x.var?'Electrónica o Sistemas':cntK(x);};
+const cur={p:'antiguo'};
+const href=(p,c,v)=>'#'+p+'-curso'+c+(C(p,c).var?'-'+(v||'elec'):'');
+
+// ---- menú: «Planes» desplegable (aquí se añadirán Software, Novedades…)
+{const btn=$('button',{type:'button',class:'ddb','aria-expanded':'false','aria-controls':'ddplanes','data-r':'planes'},'Planes',$('span',{class:'chev','aria-hidden':'true'}));
+  const pnl=$('div',{class:'ddp',id:'ddplanes',hidden:true},...PK.map(p=>$('a',{href:'#'+p+'-curso1',class:'ddpl'},
+    $('span',{class:'ddpt'},$('strong',null,PLANES[p].t),PLANES[p].y?$('span',{class:'yr'},PLANES[p].y):null),$('small',null,nPlan(p)?nPlan(p)+' asignaturas · 4 cursos':'Pendiente de completar'))));
+  const dd=$('div',{class:'dd'},btn,pnl);nav.append(dd);
+  const set=v=>{pnl.hidden=!v;btn.setAttribute('aria-expanded',String(v));};
+  btn.addEventListener('click',e=>{e.stopPropagation();set(pnl.hidden);});
+  document.addEventListener('click',e=>{if(!dd.contains(e.target))set(false);});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false);});
+  pnl.addEventListener('click',e=>{if(e.target.closest('a'))set(false);});}
+
+const row=(id,p)=>{const s=SUBJ[id],g=GUIA[id],w=whereAll(id),both=new Set(w.map(x=>x[0])).size>1;
+  const loc=(w.find(x=>x[0]===p)||w[0]||[]);
+  const sub=(p?'':PLANES[loc[0]].t+' · '+ORD[loc[1]-1]+' curso · ')+(p&&both?'en los dos planes · ':'');
+  const ec=(p&&PLANES[p].ects&&PLANES[p].ects[id])?PLANES[p].ects[id]+' ECTS · ':'';
+  if(!s.page)return $('a',{class:'row off',href:'#'+id},$('span',{class:'ab'},s.ab),$('div',null,$('b',null,s.name),$('small',null,sub+ec+'portal en preparación')),$('span',{class:'go','aria-hidden':'true'},'→'));
+  return $('a',{class:'row',href:'#'+id,style:'--c:var('+s.c+')'},$('span',{class:'ab'},s.ab),
+    $('div',null,$('b',null,s.name),$('small',null,(sub+((p&&PLANES[p].ects&&PLANES[p].ects[id])?PLANES[p].ects[id]+' ECTS':g?g.creditos+' ECTS':'')).replace(/ · $/,''))),$('span',{class:'go','aria-hidden':'true'},'→'));};
+const empty=t=>$('div',{class:'row empty'},t);
+
+function home(){
+  view.append(
+    $('section',{class:'hero gut'},$('div',{class:'wrap'},
+      $('span',{class:'logo',role:'img','aria-label':'TELECOHUB UAB'}),
+      $('p',{class:'lead'},'Apuntes, laboratorios interactivos, exámenes resueltos y guías docentes del grado en Ingeniería de Telecomunicación, ordenados por planes de estudio y cursos.'),
+      $('div',{class:'cta'},$('a',{class:'btn fill',href:'#antiguo-curso1'},'Plan antiguo'),$('a',{class:'btn',href:'#nuevo-curso1'},'Plan nuevo 2026-2027')))),
+    $('section',{class:'gut'},$('div',{class:'wrap'},$('div',{class:'sh'},$('h2',null,'Planes de estudio')),
+      $('div',{class:'plans'},...PK.map(p=>$('a',{class:'plan',href:'#'+p+'-curso1'},
+        $('span',{class:'planh'},$('b',null,PLANES[p].t),PLANES[p].y?$('span',{class:'yr'},PLANES[p].y):null),
+        $('small',null,PLANES[p].s),
+        $('span',{class:'pmeta'},(nPlan(p)?nPlan(p)+' asignaturas':'Pendiente de completar')+' · 4 cursos · 2 especialidades'),
+        $('span',{class:'go','aria-hidden':'true'},'Ver el plan →')))))),
+    $('section',{class:'gut',id:'asignaturas'},$('div',{class:'wrap'},$('div',{class:'sh'},$('h2',null,'Portales disponibles'),$('span',{class:'lbl'},all.length+' asignaturas')),
+      $('div',{class:'list'},...all.map(id=>row(id))))));
+  document.title='TELECOHUB UAB';
+}
+// ---- vista de plan: selector de plan, pestañas de curso y, desde tercero, la especialidad
+function course(p,c,v){
+  const P=PLANES[p],X=C(p,c);v=X.var?(v||'elec'):null;const k=K(p,c,v);
+  const app=(...z)=>view.append(...z.filter(Boolean));
+  const seg=$('div',{class:'seg',role:'group','aria-label':'Plan de estudios'},...PK.map(pp=>$('a',{href:href(pp,c,v),'aria-current':pp===p?'page':false},PLANES[pp].t,PLANES[pp].y?$('span',{class:'yr'},PLANES[pp].y):null)));
+  const ctabs=$('nav',{class:'ctabs','aria-label':'Cursos'},...[1,2,3,4].map(cc=>$('a',{href:href(p,cc,v),'aria-current':cc===c?'page':false},
+    $('b',null,String(cc)),$('span',null,C(p,cc).t),$('small',null,C(p,cc).var?'por especialidad':cntK(C(p,cc))))));
+  const vtabs=X.var?$('div',{class:'vsel'},$('span',{class:'lbl'},'Especialidad'),$('div',{class:'seg sm',role:'group','aria-label':'Especialidad'},...VK.map(vv=>$('a',{href:href(p,c,vv),'aria-current':vv===v?'page':false,title:VARS[vv].n},VARS[vv].t)))):
+    $('p',{class:'vnote'},'Curso común a las dos especialidades.');
+  app($('section',{class:'ph gut'},$('div',{class:'wrap'},
+    $('div',{class:'crumbs'},$('a',{href:'#inicio'},'Inicio'),'/',$('span',null,PN(p))),
+    $('div',{class:'phrow'},$('h1',null,P.t),seg),
+    $('p',{class:'lead'},P.s),ctabs)),
+    $('section',{class:'gut csec'},$('div',{class:'wrap'},
+      $('div',{class:'chead'},$('h2',null,X.t+(v?' · '+VARS[v].t:'')),vtabs),
+      v?$('p',{class:'vfull'},VARS[v].n):null)),
+    $('section',{class:'gut'},$('div',{class:'wrap cuats'},...[0,1].map(q=>$('div',null,
+      $('div',{class:'sh'},$('h2',null,Q[q]),$('span',{class:'lbl'},String(k.q[q].length))),
+      $('div',{class:'list'},...(k.q[q].length?k.q[q].map(x=>row(x,p)):[empty('Sin asignaturas todavía')])))))),
+    (k.q[2]||[]).length?$('section',{class:'gut'},$('div',{class:'wrap'},$('div',{class:'sh'},$('h2',null,'Anuales'),$('span',{class:'lbl'},'primer y segundo cuatrimestre')),$('div',{class:'list'},...k.q[2].map(x=>row(x,p))))):null,
+    (k.q[3]||[]).length?$('section',{class:'gut'},$('div',{class:'wrap'},$('div',{class:'sh'},$('h2',null,'Semestre por determinar'),$('span',{class:'lbl'},String(k.q[3].length))),$('div',{class:'list'},...k.q[3].map(x=>row(x,p))))):null,
+    (k.opt||[]).length?(()=>{const list=$('div',{class:'list'},...k.opt.map(x=>row(x,p)));list.hidden=true;
+      const b=$('button',{type:'button',class:'optb','aria-expanded':'false'},$('span',null,'Optativas'),$('span',{class:'lbl'},k.opt.length+' asignaturas'),$('span',{class:'chev','aria-hidden':'true'}));
+      b.onclick=()=>{list.hidden=!list.hidden;b.setAttribute('aria-expanded',String(!list.hidden));};
+      return $('section',{class:'gut',id:'optativas'},$('div',{class:'wrap'},b,k.optNota?$('p',{class:'optn'},k.optNota):null,list));})():null);
+  document.title=X.t+(v?' · '+VARS[v].t:'')+' · '+PN(p)+' · TELECOHUB UAB';
+}
+const facts=rows=>$('dl',{class:'facts'},...rows.map(([k,v])=>$('div',null,$('dt',null,k),$('dd',null,v))));
+function subject(id,tab){
+  const s=SUBJ[id],G0=GUIA[id],W=whereAll(id),[p0,c,q,v0]=(W.find(x=>x[0]===cur.p)||W[0]||['antiguo',1,0,null]);
+  const gp=G0&&G0.alt?(tab==='antiguo'||(tab===true&&p0==='antiguo')?'antiguo':'nuevo'):null,g=gp==='antiguo'?G0.alt:G0;
+  const crumbs=$('div',{class:'crumbs'},$('a',{href:'#inicio'},'Inicio'),'/',$('a',{href:href(p0,1)},PN(p0)),'/',$('a',{href:href(p0,c,v0)},C(p0,c).t+(v0?' · '+VARS[v0].t:'')),'/',$('span',null,s.ab));
+  const planes=W.map(([pp,cc,qq,vv])=>PN(pp)+': '+ORD[cc-1]+' curso'+(vv?' ('+VARS[vv].t+')':'')+', '+per(qq));
+  if(!s.page&&!g){view.append($('section',{class:'ph gut'},$('div',{class:'wrap'},
+      crumbs.cloneNode(true),
+      $('div',{class:'sh1'},$('span',{class:'ab'},s.ab)),$('h2',null,s.name),
+      $('p',{class:'lead'},planes.join(' · ')+(SUBJ[id].cr?' · '+SUBJ[id].cr+' créditos':'')+(SUBJ[id].code?' · código '+SUBJ[id].code:'')+'.'))),
+    $('section',{class:'gut'},$('div',{class:'wrap'},$('div',{class:'slot'},$('b',null,'Portal en preparación'),'Aquí irán los apuntes, laboratorios, exámenes resueltos y la guía docente de esta asignatura cuando se añadan.'))));
+    document.title=s.ab+' · TELECOHUB UAB';return;}
+  view.append($('section',{class:'ph gut',style:'--c:var('+s.c+')'},$('div',{class:'wrap'},
+    crumbs.cloneNode(true),
+    $('div',{class:'sh1'},$('span',{class:'ab'},s.ab),s.page?$('span',{class:'dot'}):null),
+    $('h2',null,s.name),$('p',{class:'lead'},s.desc||(g.objetivos[0])),
+    s.page?$('div',{class:'cta'},$('a',{class:'btn fill',href:s.page+'#inicio'},'Abrir apuntes y laboratorios'),s.nums&&s.nums['exámenes']?$('a',{class:'btn',href:s.page+'#examenes'},'Exámenes resueltos'):null):null,
+    $('div',{class:'tabs',role:'tablist'},$('a',{href:'#'+id,'aria-current':tab?false:'page'},'Resumen'),g?$('a',{href:'#'+id+'-guia','aria-current':tab?'page':false},'Guía docente'):null))));
+  if(!tab){
+    view.append($('section',{class:'gut'},$('div',{class:'wrap cols'},
+      s.page?$('div',null,$('div',{class:'sh'},$('h2',null,s.unidad+' del portal')),
+        $('ol',{class:'temas'},...s.temas.map(([t,d],i)=>$('li',null,$('span',null,String(i+1)),$('div',null,$('b',null,t),$('small',null,d))))))
+       :$('div',null,$('div',{class:'sh'},$('h2',null,'Temario oficial')),
+        $('ol',{class:'temas'},...g.contenidos.map(([t,subs],i)=>$('li',null,$('span',null,String(i+1)),$('div',null,$('b',null,t),subs.length?$('small',null,subs.join(' · ')):null)))),
+        $('div',{class:'slot'},$('b',null,'Portal en preparación'),'Los apuntes, laboratorios y exámenes resueltos se añadirán más adelante.')),
+      $('div',null,$('div',{class:'sh'},$('h2',null,'Ficha')),
+        facts([...W.map(([pp,cc,qq,vv])=>[PN(pp),ORD[cc-1]+' curso'+(vv?' · '+VARS[vv].t:'')+' · '+per(qq)]),...(g?[['Créditos',g.creditos+' ECTS'],['Código',g.codigo],['Coordinación',g.coord[0]]]:[]),
+          ...Object.entries(s.nums||{}).map(([k,v])=>[k.charAt(0).toUpperCase()+k.slice(1),String(v)])]),
+        g?$('a',{class:'slot link',href:'#'+id+'-guia'},$('b',null,'Guía docente '+(G0&&G0.alt?G0.curso+' y '+G0.alt.curso:(g&&g.curso||'2026-27'))+' →'),'Evaluación, profesorado, contenidos oficiales y bibliografía.')
+         :$('div',{class:'slot'},$('b',null,'Guía docente'),'Pendiente de añadir.')))));
+  }else{
+    const L=(t,...k)=>$('div',{class:'gblk'},$('h3',null,t),...k);
+    view.append($('section',{class:'gut'},$('div',{class:'wrap cols'},
+      $('div',null,
+        gp?$('div',{class:'seg sm gsel',role:'group','aria-label':'Guía según el plan'},$('a',{href:'#'+id+'-guia-nuevo','aria-current':gp==='nuevo'?'page':false},'Plan nuevo · '+G0.curso),$('a',{href:'#'+id+'-guia-antiguo','aria-current':gp==='antiguo'?'page':false},'Plan antiguo · '+G0.alt.curso)):null,
+        L('Evaluación',$('table',{class:'ev'},$('tbody',null,...g.eval.map(([a,b])=>$('tr',null,$('td',null,a),$('td',null,b))))),
+          $('div',{class:'formula'},...g.formula.map(f=>$('p',null,f))),
+          $('ul',{class:'ul'},...g.notas.map(n=>$('li',null,n)))),
+        L('Contenidos',$('ol',{class:'temas'},...g.contenidos.map(([t,subs],i)=>$('li',null,$('span',null,String(i+1)),$('div',null,$('b',null,t),$('small',null,subs.join(' · '))))))),
+        L('Objetivos',$('ul',{class:'ul'},...g.objetivos.map(o=>$('li',null,o)))),
+        L('Bibliografía básica',$('ul',{class:'ul'},...g.biblio.map(o=>$('li',null,o))))),
+      $('div',null,
+        L('Datos',facts([['Código',g.codigo],['Créditos',g.creditos+' ECTS'],['Tipo',g.tipo],...W.map(([pp,cc,qq,vv])=>[PN(pp),C(pp,cc).t+(vv?' · '+VARS[vv].t:'')]),['Periodo',g.periodo]])),
+        L('Profesorado',facts([['Coordinación',g.coord[0]],['Correo',g.coord[1]],...g.equipo.map((n,i)=>[i?'':'Equipo docente',n])])),
+        L('Dedicación (horas)',facts(g.horas.map(([a,b])=>[a,String(b)]))),
+        L('Requisitos previos',$('p',{class:'pp'},g.prereq)),
+        L('Uso de la IA',$('p',{class:'pp'},g.ia)),
+        L('Software',$('p',{class:'pp'},g.software)),
+        L('Grupos',$('p',{class:'pp'},g.grupos)),
+        L('Titulaciones',$('ul',{class:'ul'},...g.titulaciones.map(t=>$('li',null,t))))))),
+      $('section',{class:'gut'},$('div',{class:'wrap'},$('p',{class:'src'},'Resumen en castellano de la guía docente oficial del curso '+(g.curso||'2026-27')+(g.plan?' ('+g.plan.toLowerCase()+')':'')+'. En caso de duda, manda la guía publicada por la universidad.'))));
+  }
+  document.title=s.ab+(tab?' · guía docente':'')+' · TELECOHUB UAB';
+}
+function route(){
+  const id=(location.hash||'').slice(1)||'inicio';view.innerHTML='';
+  const cm=/^(antiguo|nuevo)-curso([1-4])(?:-(elec|sist))?$/.exec(id),old=/^curso([1-4])$/.exec(id),gm=/^([a-z0-9]+)-guia(?:-(antiguo|nuevo))?$/.exec(id);
+  let on=false;
+  if(old){location.replace(href('antiguo',+old[1]));return;}
+  if(PLANES[id]){location.replace(href(id,1));return;}
+  if(cm){cur.p=cm[1];course(cm[1],+cm[2],cm[3]);on=true;}
+  else if(SUBJ[id]){subject(id,false);on=true;}
+  else if(gm&&SUBJ[gm[1]]&&GUIA[gm[1]]){subject(gm[1],gm[2]||true);on=true;}
+  else home();
+  const b=nav.querySelector('[data-r="planes"]');on?b.setAttribute('aria-current','page'):b.removeAttribute('aria-current');
+  if(id==='asignaturas'){const t=document.getElementById('asignaturas');if(t)t.scrollIntoView();}else window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);route();
+{const root=document.documentElement,b=document.getElementById('th');let t=null;
+  try{t=localStorage.getItem('telecohub-tema');}catch(e){}
+  if(t==='light'||t==='dark')root.setAttribute('data-theme',t);
+  b.addEventListener('click',()=>{const cur=root.getAttribute('data-theme');const dark=cur?cur==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+    const n=dark?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('telecohub-tema',n);}catch(e){}});}
+
+</script>
+
+</body></html>
